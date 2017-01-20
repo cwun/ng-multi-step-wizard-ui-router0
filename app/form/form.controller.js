@@ -5,22 +5,13 @@
         .module('wizardApp')
         .controller('FormController', FormController);
  
-    FormController.$inject = ['$scope'];
+    FormController.$inject = ['$scope', 'FormDataModel'];
  
-    function FormController($scope) {
+    function FormController($scope, FormDataModel) {
         var vm = this;
-        vm.title = 'Create a Profile';
+        vm.title = 'Multi-Step Wizard';
         // we will store all of our form data in this object
-        $scope.formData = {
-            firstName: ''
-            ,lastName: ''
-            ,email: ''
-            ,work: 'Code'
-            ,street: ''
-            ,city: ''
-            ,state: ''
-            ,zip: ''
-        };
+        $scope.formData = new FormDataModel();
 
         activate();
  

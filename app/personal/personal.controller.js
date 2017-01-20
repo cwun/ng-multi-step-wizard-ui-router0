@@ -9,14 +9,14 @@
  
     function PersonalController() {
         var vm = this;
-        vm.title = 'Personal';
+        vm.title = 'Please tell us about yourself.';
         
         activate();
  
         ////////////////
  
         function activate() {
-            console.log(vm.title + ' loaded!');
+            console.log('Personal feature loaded!');
         }
     }
 })();

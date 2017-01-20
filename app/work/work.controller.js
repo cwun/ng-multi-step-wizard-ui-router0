@@ -9,14 +9,14 @@
  
     function WorkController() {
         var vm = this;
-        vm.title = 'Work';
+        vm.title = 'What do you do?';
         
         activate();
  
         ////////////////
  
         function activate() {
-            console.log(vm.title + ' loaded!');
+            console.log('Work feature loaded!');
         }
     }
 })();

@@ -37,20 +37,16 @@
                 </li>
             
             </ul>
-
             <div class="clearfix"></div>
-
         </div>
 
         <div class="tab-content">
             <div ui-view></div>
         </div>
-
     </div>
 
-    <!-- show our formData as it is being typed -->
-    <pre>
-        {{ formData }}
-    </pre>
+    <!-- For Debugging: show our formData as it is being typed -->
+    <pre>{{ formData | json }}</pre>
+
 </div>
 

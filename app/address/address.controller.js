@@ -9,14 +9,14 @@
  
     function AddressController() {
         var vm = this;
-        vm.title = 'Address';
+        vm.title = 'Where do you live?';
         
         activate();
  
         ////////////////
  
         function activate() {
-            console.log(vm.title + ' loaded!');
+            console.log('Address feature loaded!');
         }
     }
 })();

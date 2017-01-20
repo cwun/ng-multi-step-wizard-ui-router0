@@ -9,14 +9,14 @@
  
     function ResultController() {
         var vm = this;
-        vm.title = 'Result';
+        vm.title = 'Thanks for staying tuned!';
         
         activate();
  
         ////////////////
  
         function activate() {
-            console.log(vm.title + ' loaded!');
+            console.log('Result feature loaded!');
         }
     }
 })();
